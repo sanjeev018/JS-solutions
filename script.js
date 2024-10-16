@@ -35,10 +35,23 @@
 //     }
 //     console.log("---------------------")
 // }
-
 // _________________________________________
+// #5: Calculate the sum of numbers from 1 to 10
 
+// for(var i=1; i<=10; i++){ 
+//     var sum = 0
+//     sum+=i
+// }
+// console.log(sum)
+// _________________________________________
+// Calculate 10!
 
+// let number = 1
+
+// for(var i=1; i<=10; i++){ 
+//     var sum= number*=i
+// }
+// console.log(sum)
 
 
 
