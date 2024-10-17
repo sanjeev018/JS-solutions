@@ -52,6 +52,37 @@
 //     var sum= number*=i
 // }
 // console.log(sum)
+// _________________________________________
 
+// #7: Calculate the sum of odd numbers greater than 10 and less than 30
 
+// var sumOfOdd = 0
 
+// for(var i=10; i<=30; i++){ 
+//     if(i%2 !== 0){ 
+//         sumOfOdd+=i
+//         console.log(sumOfOdd)
+//     }
+// }
+// _________________________________________
+
+// #8: Create a function that will convert from Celsius to Fahrenheit
+// function celsiusToFahrenheit(n)
+// {
+//     return n * 1.8 + 32;
+// }
+
+// let r = celsiusToFahrenheit(40);
+// console.log(r);
+// _________________________________________
+// #9: Create a function that will convert from Fahrenheit to Celsius
+
+// function fahrenheitToCelsius(n){ 
+//     {
+//         return (n-32)/1.8
+//     }
+// }
+// let r = fahrenheitToCelsius(104);
+// console.log(r);
+// _________________________________________
+// #10: Calculate the sum of numbers in an array of numbers
