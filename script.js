@@ -86,3 +86,109 @@
 // console.log(r);
 // _________________________________________
 // #10: Calculate the sum of numbers in an array of numbers
+
+// let arr = [2,2,2,2,2,2,2] 
+// let sumOfNum = 0
+// for(let i=0; i<arr.length; i++){ 
+//     sumOfNum+=arr[i]
+// }
+// console.log(sumOfNum)
+// ----------------------
+
+// function sumOfArray(arr){ 
+//     let sum = 0; 
+//     for(let i=0; i<arr.length; i++){ 
+//         sum+=arr[i]
+//     }
+//     return sum; 
+// }
+// console.log(sumOfArray([50,50,50,50]))
+// _____________________________________________
+// 11: Calculate the average of the numbers in an array of numbers
+
+// function avgOfNum(arr){
+//     let n = arr.length
+//     let sum = 0
+//     for(let i=0; i<arr.length; i++){ 
+//         sum+=arr[i]
+//     }
+//     return sum/n;
+// }
+// console.log(avgOfNum([5,5,5,5,5]))
+// _____________________________________________
+// #12: Create a function that receives an array of numbers and returns an array containing only the
+//  positive numbers
+
+// function positiveNumber(arr){ 
+//     let arr2 = []
+//     for(let i=0; i<arr.length; i++){ 
+//         let ele = arr[i];
+//         if(ele >= 0){ 
+//             arr2.push(ele)
+
+//         }
+//     }
+//     return arr2 
+// }
+// console.log(positiveNumber([3,4,5,-7,-5,4]))
+
+// -------------------------
+// function positiveNumber(arr){ 
+//     return arr.filter((ele => ele>=0))
+// }
+// console.log(positiveNumber([2,3,4,5,6,-5,-4]))
+// _____________________________________________
+// #13: Find the maximum number in an array of numbers
+// let array = [2,5,10,24,20]
+// let max = array[0]
+// for(let i=0; i<array.length; i++){ 
+//    if(array[i] > max){ 
+//     max = array[i]
+//    }
+// }
+// console.log(max)
+// _____________________________________________
+// #14: Print the first 10 Fibonacci numbers without recursion
+// let f0 = 0;
+// console.log(f0);
+
+// let f1 = 1;
+// console.log(f1)
+// for(let i = 2; i < 10; i++)
+// {
+//     let fi = f1 + f0;
+//     console.log(fi);
+    
+//     f0 = f1;
+//     f1 = fi;
+// }
+// _____________________________________________
+// #15: Create a function that will find the nth Fibonacci number using recursion
+// function fibonacciNumber(n){ 
+//     if(n==0)
+//     return 0;
+
+//     if(n==1)
+//     return 1; 
+
+//     return fibonacciNumber(n-1) + fibonacciNumber(n-2);    
+// }
+// let n = fibonacciNumber(4); 
+// console.log(n)
+// _____________________________________________
+// #16: Create a function that will return a Boolean specifying if a number is prime
+
+function isPrime(num){ 
+    if(num < 2){ 
+        return false
+    }
+    if(num == 2){ 
+        return true
+    }
+}
+
+
+
+
+
+

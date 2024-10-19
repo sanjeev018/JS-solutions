@@ -45,5 +45,4 @@
 //     console.log(value)
     
 //     abc.prototype.getName = function () {};
-
 // __________________________
