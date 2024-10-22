@@ -176,86 +176,98 @@
 // let n = fibonacciNumber(4); 
 // console.log(n)
 // _____________________________________________
-// #16: Create a function that will return a Boolean specifying if a number is prime
+// // #16: Create a function that will return a Boolean specifying if a number is prime
 
-// function isPrime(num){ 
-//     if(num < 2){ 
-//         return false
-//     }
-//     if(num == 2){ 
-//         return true
-//     }
+// // function isPrime(num){ 
+// //     if(num < 2){ 
+// //         return false
+// //     }
+// //     if(num == 2){ 
+// //         return true
+// //     }
 
-//     for(let i=2; i<=num; i++){ 
-//         if(num % i == 0){ 
-//             return false
-//         }
-//         return true
-//     }
-// }
+// //     for(let i=2; i<=num; i++){ 
+// //         if(num % i == 0){ 
+// //             return false
+// //         }
+// //         return true
+// //     }
+// // }
 
-// console.log(isPrime(0))
-// _____________________________________________
-// #17: Calculate the sum of digits of a positive integer number
-// let array = [2,3,-4,5,-4 , -4, 4]
-// let sum = 0
+// // console.log(isPrime(0))
+// // _____________________________________________
+// // #17: Calculate the sum of digits of a positive integer number
+// // let array = [2,3,-4,5,-4 , -4, 4]
+// // let sum = 0
 
-// for(let i=0; i<array.length; i++){ 
-//     if(array[i] >= 0){ 
-//         let posNum = array[i]
-//         sum+=posNum
-//     }
-// }
-// console.log(sum)
-// ----------------------------
+// // for(let i=0; i<array.length; i++){ 
+// //     if(array[i] >= 0){ 
+// //         let posNum = array[i]
+// //         sum+=posNum
+// //     }
+// // }
+// // console.log(sum)
+// // ----------------------------
 
-// let n = 123456789
+// // let n = 123456789
 
-// let s = n.toString()
-// let sum = 0
-// for(let char of s){ 
-//     let digit = parseInt(char)
-//     sum = sum+digit
-// }
-// console.log(sum)
-// _____________________________________________
+// // let s = n.toString()
+// // let sum = 0
+// // for(let char of s){ 
+// //     let digit = parseInt(char)
+// //     sum = sum+digit
+// // }
+// // console.log(sum)
+// // _____________________________________________
 // #18: Print the first 100 prime numbers
-printPrimes(100);
+// let primes = [];
+// let num = 2; // Starting number to check for primes
 
-// Function prints the first nPrimes numbers
-// function printPrimes(nPrimes)
-// {
-//     let n = 0;
-//     let i = 2;
-    
-//     while(n < nPrimes)
-//     {
-//         if (isPrime(i))
-//         {
-//             console.log(n, " --> ", i);
-//             n++;
-//         }
-        
-//         i++;
+// while (primes.length < 100) {
+//   let isPrime = true;
+  
+//   for (let i = 2; i <= Math.sqrt(num); i++){
+//     if (num % i === 0) {
+//       isPrime = false;
+//       break;
 //     }
+//   }
+  
+//   if (isPrime) {
+//     primes.push(num);
+//   }
+  
+//   num++;
 // }
-// function isPrime(n)
-// {
-//     if (n < 2)
-//         return false;
-        
-//     if (n == 2)
-//         return true;
-    
-//     let maxDiv = Math.sqrt(n);
-    
-//     for(let i = 2; i <= maxDiv; i++)
-//     {
-//         if (n % i == 0)
-//         {
-//             return false;
-//         }
-//     }
-//     return true;
-// }
+// console.log(primes);
+
+console.log(Math.sqrt(1))
+console.log(Math.sqrt(2))
+console.log(Math.sqrt(3))
+console.log(Math.sqrt(4))
+console.log(Math.sqrt(5))
+console.log(Math.sqrt(6))
+console.log(Math.sqrt(7))
+console.log(Math.sqrt(8))
+console.log(Math.sqrt(9))
+console.log(Math.sqrt(10))
+console.log(Math.sqrt(11))
+console.log(Math.sqrt(12))
+console.log(Math.sqrt(13))
+console.log(Math.sqrt(14))
+console.log(Math.sqrt(16))
+console.log(Math.sqrt(17))
+console.log(Math.sqrt(18))
+console.log(Math.sqrt(19))
+console.log(Math.sqrt(20))
+console.log(Math.sqrt(21))
+console.log(Math.sqrt(22))
+console.log(Math.sqrt(23))
+console.log(Math.sqrt(24))
+console.log(Math.sqrt(25))
+console.log(Math.sqrt(26))
+console.log(Math.sqrt(27))
+console.log(Math.sqrt(28))
+console.log(Math.sqrt(29))
+console.log(Math.sqrt(30))
 
