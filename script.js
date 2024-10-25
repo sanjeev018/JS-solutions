@@ -232,42 +232,24 @@
 //       break;
 //     }
 //   }
-  
 //   if (isPrime) {
 //     primes.push(num);
 //   }
-  
 //   num++;
 // }
 // console.log(primes);
 
-console.log(Math.sqrt(1))
-console.log(Math.sqrt(2))
-console.log(Math.sqrt(3))
-console.log(Math.sqrt(4))
-console.log(Math.sqrt(5))
-console.log(Math.sqrt(6))
-console.log(Math.sqrt(7))
-console.log(Math.sqrt(8))
-console.log(Math.sqrt(9))
-console.log(Math.sqrt(10))
-console.log(Math.sqrt(11))
-console.log(Math.sqrt(12))
-console.log(Math.sqrt(13))
-console.log(Math.sqrt(14))
-console.log(Math.sqrt(16))
-console.log(Math.sqrt(17))
-console.log(Math.sqrt(18))
-console.log(Math.sqrt(19))
-console.log(Math.sqrt(20))
-console.log(Math.sqrt(21))
-console.log(Math.sqrt(22))
-console.log(Math.sqrt(23))
-console.log(Math.sqrt(24))
-console.log(Math.sqrt(25))
-console.log(Math.sqrt(26))
-console.log(Math.sqrt(27))
-console.log(Math.sqrt(28))
-console.log(Math.sqrt(29))
-console.log(Math.sqrt(30))
+// ______________________________
 
+// print fibonnaci number
+
+var a= 0
+var b= 1
+console.log(a)
+console.log(b)
+for(var i=0; i<=10; i++){ 
+    var temp = a+b // 1+1 // 2  
+    a = b; //1
+    b = temp //1
+    console.log(temp)
+}
