@@ -243,13 +243,15 @@
 
 // print fibonnaci number
 
-var a= 0
-var b= 1
-console.log(a)
-console.log(b)
-for(var i=0; i<=10; i++){ 
-    var temp = a+b // 1+1 // 2  
-    a = b; //1
-    b = temp //1
-    console.log(temp)
-}
+// var a= 0
+// var b= 1
+// console.log(a)
+// console.log(b)
+// for(var i=0; i<=10; i++){ 
+//     var temp = a+b // 1+1 // 2  
+//     a = b; //1
+//     b = temp //1
+//     console.log(temp)
+// }
+
+// ______________________________

@@ -46,3 +46,11 @@
     
 //     abc.prototype.getName = function () {};
 // __________________________
+
+//Compound Statement
+
+{ 
+    var a = 10;
+    console.log(a);
+    // this is the snajeev gour and his name his
+}
