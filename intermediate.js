@@ -86,3 +86,24 @@
 
 // console.log(arr)
 // console.log(result)
+// -----------------------------------
+
+// (7) Write a function to reverse a given string without using the built-in .reverse() method.
+
+// let str = "sanjeev"
+
+// let result = str.split('').reverse().join('')
+// console.log(result)
+
+// without method
+
+function reverseString(str){ 
+    let string = ""
+    for(let i=str.length-1; i>=0; i--){ 
+        string+=str[i]
+    }
+    return string
+}
+var string = "sanjeev"
+
+console.log(reverseString(string))
