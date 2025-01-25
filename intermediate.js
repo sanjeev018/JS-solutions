@@ -88,22 +88,46 @@
 // console.log(result)
 // -----------------------------------
 
-// (7) Write a function to reverse a given string without using the built-in .reverse() method.
+// (7) Write a function to reverse a given string without using the built-in .reverse() method. ***
 
 // let str = "sanjeev"
 
 // let result = str.split('').reverse().join('')
 // console.log(result)
 
-// without method
+// without method_______________
 
-function reverseString(str){ 
-    let string = ""
-    for(let i=str.length-1; i>=0; i--){ 
-        string+=str[i]
-    }
-    return string
-}
-var string = "sanjeev"
+// function reverseString(str){
+//     let string = ""
+//     for(let i=str.length-1; i>=0; i--){ 
+//         string+=str[i]
+//     }
+//     return string
+// }
+// let string = "sanjeev gour"
+// console.log(reverseString(string))
+// -----------------------------------------
+// (8) Write a function to find the largest number in a given array.
+// function largestNumber(arr){ 
+//     let maxNum = arr[0]
+//     for(let i=0; i<arr.length; i++){ 
+//         if(arr[i] > maxNum){ 
+//             maxNum = arr[i]
+//         }
+//     }
+//     return maxNum
 
-console.log(reverseString(string))
+// }
+// console.log(largestNumber([2,4,6,8,3,4]))
+// __________________
+// Math.max() with the spread operator.
+// let array = [2,4,6,8,3,4]
+// let maxNumber = Math.max(...array)
+// console.log(maxNumber)
+// __________________
+// Reduce method.
+// let array = [2,4,6,8,3,4]
+// const maxNum = array.reduce((acc, curr,i)=> { 
+//     return console.log(i)
+// })
+// -----------------------------------------------
