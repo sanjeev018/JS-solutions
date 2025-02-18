@@ -132,9 +132,198 @@
 // })
 // -----------------------------------------------
 // (9) Create a function that removes duplicate values from an array.
-function removeDuplicates(arr){ 
-    return [...new Set(arr)]; 
-}
-const arrayWithDuplicates = [1,2,2,3,4,4,5]; 
-const uniqueArray = removeDuplicates(arrayWithDuplicates)
-console.log(uniqueArray)
+// function removeDuplicates(arr){ 
+//     return [...new Set(arr)]; 
+// }
+// const arrayWithDuplicates = [1,2,2,3,4,4,5]; 
+// const uniqueArray = removeDuplicates(arrayWithDuplicates)
+// console.log(uniqueArray)
+
+// _______________________________________________
+
+// (10) FizzBuzz Problem
+// Print numbers from 1 to 100:
+
+// If divisible by 3, print "Fizz"
+// If divisible by 5, print "Buzz"
+// If divisible by both 3 and 5, print "FizzBuzz"
+
+// function fizzBuzz(num){
+//     for(let i=1; i<=num; i++){ 
+//         if(i%3 === 0 && i%5 === 0){ 
+//             console.log("FizzBuzz")
+//         }else if(i%3 === 0){ 
+//             console.log("Fizz")
+//         }else if(i%5 === 0){ 
+//             console.log("Buzz")
+//         }else{ 
+//             console.log(i)
+//         }
+//     }
+//     return num;
+// }
+// console.log(fizzBuzz(100))
+// _______________________________________________
+// Flatten a Nested Array
+//(11) Write a function that flattens an array of nested arrays.
+
+// function flatten(arr){ 
+//     return arr.flat(Infinity)
+// }
+// console.log(flatten([1,2,3,[4,5],6,[7,8,[9,10]]]))
+// _______________________________________________
+// (12)Find the Missing Number in an Array
+// Given an array of numbers from 1 to N with one missing number, find the missing number.
+
+// let arr = [1,2,3,4,5,7]
+// let n = arr.length+1     //5
+
+// let expectedSum = (n * (n+1))/2;   //15
+
+// let actualSum = arr.reduce((sum,num)=> sum+num, 0)  //11
+
+// let missNum = expectedSum - actualSum
+// console.log(missNum)
+// _________________________________________________________
+// Check if Two Strings Are Anagrams
+// Two strings are anagrams if they contain the same characters in the same frequency but in any order.
+
+// function anagrams(str1 , str2){ 
+//     if(str1.length !== str2.length) return false
+
+//     return str1.toLowerCase().split('').sort().join('') === str2.toLowerCase().split('').sort().join('')
+// }
+
+// console.log(anagrams("sanjeev","veejnas"))
+// __________________________________________________________
+
+// ---------------------Practiced revision of the problems------------------
+
+// Write a function that takes a string and returns the reversed version 
+
+// function reverseString(str){ 
+//     return str.split('').reverse().join('')
+// }
+
+// console.log(reverseString("hello world"))
+
+// Check if a Number is Prime
+// Write a function that checks whether a given number is prime.
+
+// _______________________________________________________
+
+// Find the Largest Number in an Array
+// Write a function that takes an array of numbers and returns the largest number.
+
+// function findLargetNum(arr){
+//     let maxNum = arr[0]
+//     for(let i=0; i<arr.length; i++){ 
+//         let nums = arr[i]; 
+//         if(nums>maxNum){ 
+//             maxNum = nums
+//         }
+//     }
+//     return maxNum
+// }
+
+// console.log(findLargetNum([3,4,5,6,12,3,41,34]))
+
+// __________________________________________________________
+
+// Check for Palindrome
+// Write a function that checks if a given string is a palindrome.
+
+// function isPalindrome(str){ 
+//     return str === str.split('').reverse().join('')
+// }
+// console.log(isPalindrome("deed"))
+// ____________________________________________________________________
+
+// Remove Duplicates from an Array
+// Write a function that removes duplicate values from an array.
+
+// function removeDuplicates(arr){ 
+//     return [new Set(arr)]
+// }
+// console.log(removeDuplicates([2,3,4,4,5,5,6,7,7,6,9,9]))
+// _____________________________________________________________
+// Find the First Non-Repeating Character in a String
+// Given a string, return the first character that does not repeat
+
+// function nonRepeating(str){
+//     for(let i=0; i<str.length; i++){ 
+//         if(str.indexOf(str[i]) === str.lastIndexOf(str[i])){ 
+//             return str[i]
+//         }
+//     } 
+//     return null
+
+// }
+
+// console.log(nonRepeating("swiss"))
+
+// __________________________________________________________________________
+
+// Flatten a Nested Array
+// Write a function that flattens an array of nested arrays.
+
+// function flatten(arr){ 
+//     return [...arr.flat(Infinity)]
+// }
+
+// console.log(flatten([1,2,3,[4,[3,5],5,6],7,8]))
+
+// __________________________________________________________________________
+// Find the Missing Number in an Array
+// Given an array of numbers from 1 to N with one missing number, find the missing number.  (#)
+
+// function missingNum(arr){ 
+//     let n = arr.length+1
+
+//     for(let i=0; i<arr.length; i++){ 
+//         let expectedSum = n*(n+1) / 2
+        
+//         let actualValue = arr.reduce((num, sum)=> num+sum ,0)
+//         let result =   expectedSum - actualValue
+        
+//         return result
+//     }
+// }
+
+
+// console.log(missingNum([1,2,3,4,5,7]))
+
+// -----------------------------------------------
+// Check if Two Strings are Anagrams
+// Write a function to check if two strings are anagrams.
+
+// function isAnagrams(str1, str2){ 
+//     if(str1.length !== str2.length) return false
+// //     return str1.toLowerCase().split('').sort().join('') === str2.toLowerCase().split('').sort().join('')
+
+//  return str1.toLowerCase().split('').sort().join('') === str2.toLowerCase().split('').sort().join('')
+    
+// }
+// console.log(isAnagrams("sheet" , "teesh"))
+// -----------------------------------------------
+
+// Implement a Basic Debounce Function
+// Implement a debounce function that limits how often a function can be called  {to see youtube}
+
+// function debounce(func, delay) {
+//     let timer;
+//     return function(...args) {
+//         clearTimeout(timer); // Clear the previous timer
+//         timer = setTimeout(() => func.apply(this, args), delay);
+//     };
+// }
+
+// // Example Usage
+// const logMessage = () => console.log("Debounced Function Executed");
+
+// const debouncedLog = debounce(logMessage, 1000);
+
+// debouncedLog();
+// debouncedLog();
+// debouncedLog(); // Only this call will execute after 1 second
+
