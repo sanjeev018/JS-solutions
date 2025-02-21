@@ -307,23 +307,52 @@
 // console.log(isAnagrams("sheet" , "teesh"))
 // -----------------------------------------------
 
-// Implement a Basic Debounce Function
-// Implement a debounce function that limits how often a function can be called  {to see youtube}
+// How To find duplicate elements in array in javascript|  (to do Prac)
 
-// function debounce(func, delay) {
-//     let timer;
-//     return function(...args) {
-//         clearTimeout(timer); // Clear the previous timer
-//         timer = setTimeout(() => func.apply(this, args), delay);
-//     };
-// }
+// let arrnum = [1,2,3,3,4,4,5]
 
-// // Example Usage
-// const logMessage = () => console.log("Debounced Function Executed");
+// let duplicate = arrnum.filter((ele, i , arr)=> { 
+//     return arr.indexOf(ele) !== i
+   
+// })
 
-// const debouncedLog = debounce(logMessage, 1000);
+// console.log(duplicate)
+// -------------------------------------------------
+// How To find max/min in a given array in javascript| Coding Interview Questions - #2 |
 
-// debouncedLog();
-// debouncedLog();
-// debouncedLog(); // Only this call will execute after 1 second
+// let array = [2,1,4,5,7,8]
+
+// let maxNum = array.reduce((prev , curr)=> { 
+//     return prev > curr ? prev : curr
+// })
+// console.log(maxNum)
+
+// let minNum = array.reduce((prev , curr)=> { 
+//     return prev < curr ? prev : curr
+// })
+// console.log(minNum)
+
+// --------------------------------------
+// what is the difference between '==' and '===' operaror|Javascript Coding Interview Question #3
+
+// let x=7;
+// let y= "7"
+// console.log(x==y)
+// console.log(x===y)
+
+// ++ The Difference between both the operators is that "==" is used to compare values whereas, "===" 
+// is used to compare both values and types 
+
+// ---------------------------------------------------
+// How To find second Largest value in array|Javascript Coding Interview Question #4 |
+
+const intArr = [2,8,9,7]
+const largestValue = (arr) => {
+let  firstLargestValue = Math.max(...arr)
+    index=arr.indexOf(firstLargestValue)
+    arr.splice(index,1)
+    return (firstLargestValue)
+}
+console.log(largestValue(arr))
+
 
