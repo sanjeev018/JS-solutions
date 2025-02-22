@@ -290,7 +290,6 @@
 //     }
 // }
 
-
 // console.log(missingNum([1,2,3,4,5,7]))
 
 // -----------------------------------------------
@@ -345,14 +344,46 @@
 
 // ---------------------------------------------------
 // How To find second Largest value in array|Javascript Coding Interview Question #4 |
+// const arr = [12,13,65,332,23,43,214]
+// let sorted = arr.sort((a,b)=> a-b)
+// let sndLargest = arr[arr.length-2]
+// console.log(sndLargest)
 
-const intArr = [2,8,9,7]
-const largestValue = (arr) => {
-let  firstLargestValue = Math.max(...arr)
-    index=arr.indexOf(firstLargestValue)
-    arr.splice(index,1)
-    return (firstLargestValue)
-}
-console.log(largestValue(arr))
+// ---------------------------------------------------------
+// Javascript Coding Interview Questions - | what is difference between Filter and Find method #5 |
+
+// const empArr = [ 
+//     {name:"sanjeev", age:20},
+//     {name:"Rishabh", age:30},
+//     {name:"sanjeev", age:25},
+//     {name:"sanjeev", age:40},
+//     {name:"sanjeev", age:45},
+//     {name:"sanjeev", age:50},
+//     {name:"sanjeev", age:12},
+// ]
+
+// let filterMethod = empArr.filter((ele)=> { 
+//     return ele.age > 25
+// })
+
+// let findMethod = empArr.find((ele)=> { 
+//     return ele.age > 30
+// })
+// console.log(findMethod)
+
+// (*)Filter() method returns the matched values in an array from the collection 
+// (*)Find() method returns the first value that matches from the collection once it matches the value
+// in findings , it will not check the remainings values in the array collection. 
+// ---------------------------------------------------------
+// How to Find missing elements in a given Array 1 to 10|Javascript Coding Interview Question#6 |
+// let array = [1,2,3,4,5,7,8,9]
+
+// let num = array.length+1   
+// let sumFormula = num * (num + 1) / 2
+// let reduceNum = array.reduce((num , curr)=> num+curr)
+// let missingNum = sumFormula - reduceNum
+// console.log(missingNum)
+// -----------------------------------------------------------------
+
 
 
