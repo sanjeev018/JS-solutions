@@ -384,6 +384,59 @@
 // let missingNum = sumFormula - reduceNum
 // console.log(missingNum)
 // -----------------------------------------------------------------
+// how to find even or odd numbers in array in javascript| Coding Interview Questions #7
+
+// let arr = [2,3,4,5,6,7,8,9,10,11,12]
+
+// for(let i=0; i<arr.length; i++){ 
+//     if(arr[i] % 2 == 0){ 
+//         console.log(arr[i],"Even Number")
+//     }else{ 
+//         console.log(arr[i] ,"odd")
+//     }
+// }
+// -------------------------------------------------------------------
+// How to find the sum of all elements in array in Javascript|Coding Interview Question #8 |
+
+// let arr = [12,12,12,12,12]
+// let sumNum = 0
+
+// for(let i=0; i<arr.length; i++){ 
+//      sumNum += arr[i]
+//     }
+//     console.log(sumNum)
+// -------------------------------------------------------------------
+// how to find factorial of a given number in Javascript| Coding Interview Questions #9 |
+
+// function factorialNum(num){
+//     if(num === 0 || num ===1){ 
+//         return 1
+//     } 
+//     let result = 1
+//     for(let i=2; i<=num; i++){ 
+//         result *= i
+//     }
+//     return result; 
+// }
+// console.log(factorialNum(5))
+// -------------------------------------------------------------------
+// how to find prime number in Javascript |Coding Interview Questions #10
+// ex:  2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97.
+
+// function isPrime(num){ 
+//    if(num < 2) return false
+
+//    for(let i=2; i<num; i++){ 
+//       if(num % i === 0){ 
+//          return false
+//       }
+//    }
+//    return true
+// }
+
+// console.log(isPrime(17))
+// -------------------------------------------------------------------------
+// how to find vowels from string in javascript| Coding Interview Questions #11 #javascript
 
 
 
