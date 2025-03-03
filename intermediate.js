@@ -438,5 +438,75 @@
 // -------------------------------------------------------------------------
 // how to find vowels from string in javascript| Coding Interview Questions #11 #javascript
 
+// let word = "E"
+// word = word.toLowerCase()
 
+// if(word == "a" || word == "e" || word == "i" || word == "o" ||word == "u"){ 
+//     console.log("word is vowel")
+// }else{ 
+//     console.log("word is not vowel")
+// }
 
+// '''''''''''''''''''''''''''''''
+
+// vowels = ['a','e','i','o','u']  <<<<Practice>>>>
+// count = 0 
+
+// const countVowel = (str) => { 
+//     for(let letter of str.toLowerCase()){
+//         if(vowels.includes(letter)){ 
+//             count++
+//         } 
+//     }
+//     return count
+// }
+
+// let name = "sanjeev"
+// console.log(countVowel("rajaram"))
+// -------------------------------------------------------------------------
+// how to reverse a string in Javascript| Coding Interview Questions #12
+
+// function reverseString(str){ 
+//     return str.split('').reverse().join('')
+// }
+
+// console.log(reverseString("sanjeev"))
+// ------------------------------------------------------------
+// heres are some palindrome words example 
+// civic, radar, level, rotor, kayak, madam, and refer.
+
+// function isPalindrome(str){
+    
+//     return str.toLowerCase().split('').reverse().join('') === str.toLowerCase()
+// }
+// console.log(isPalindrome("LeVeL"))
+// -------------------------------------------------------
+// how to swap two variables without using the third|Javascript Coding Interview Question #14
+
+// let a = 2
+// let b = 3 
+
+// // let temp = a
+// // a=b
+// // b=temp
+
+// console.log(`value of a is ${a} and value of b ${b}`)
+
+// let a = 5,
+//  b = 10;
+
+// [a, b] = [b, a];
+
+// console.log(a, b); // Output: 10 5
+
+// ----------------------------------------
+// how to merged two arrays in javascript| Coding Interview Questions #15 |
+
+let arr1 = [1,2,11,4,5]
+let arr2 = [6,7,3,8,9,10]
+
+let result = arr1.concat(arr2)
+let sorted = result.sort((a,b)=> { 
+    a-b
+})
+console.log(sorted)
