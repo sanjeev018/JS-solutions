@@ -502,11 +502,36 @@
 // ----------------------------------------
 // how to merged two arrays in javascript| Coding Interview Questions #15 |
 
-let arr1 = [1,2,11,4,5]
-let arr2 = [6,7,3,8,9,10]
+// let arr1 = [1,2,11,4,5]
+// let arr2 = [6,7,3,8,9,10]
 
-let result = arr1.concat(arr2)
-let sorted = result.sort((a,b)=> { 
-    a-b
-})
-console.log(sorted)
+// let result = arr1.concat(arr2)
+// let sorted = result.sort((a,b)=> { 
+//     a-b
+// })
+// console.log(sorted)
+// ----------------------------------------
+// How to find factor of a given integer in javascript|Coding Interview Question #16 |
+
+// let num = 8
+
+// for(let i=0; i<=num; i++){ 
+//     if(num % i == 0){ 
+//         console.log(i)
+//     }
+// }
+// ----------------------------------------
+const operator = prompt("please select operator either  + - / *")
+const num1 = parseFloat(prompt("enter num 1")) 
+const num2 = parseFloat(prompt("enter num 2"))
+
+if(operator == "+"){ 
+   result = num1 + num2
+}else if(operator == "-"){ 
+    result = num1 - num2
+}else if(operator == "*"){ 
+    result = num1 * num2
+}else{ 
+    result = num1/num2
+}
+console.log(`${num1} ${operator} ${num2} = ${result}`)
