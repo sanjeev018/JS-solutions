@@ -521,17 +521,36 @@
 //     }
 // }
 // ----------------------------------------
-const operator = prompt("please select operator either  + - / *")
-const num1 = parseFloat(prompt("enter num 1")) 
-const num2 = parseFloat(prompt("enter num 2"))
+// parseFloat
+// const operator = prompt("please select operator either  + - / *")  <<practice>>
+// const num1 = parseFloat(prompt("enter num 1")) 
+// const num2 = parseFloat(prompt("enter num 2"))
 
-if(operator == "+"){ 
-   result = num1 + num2
-}else if(operator == "-"){ 
-    result = num1 - num2
-}else if(operator == "*"){ 
-    result = num1 * num2
-}else{ 
-    result = num1/num2
-}
-console.log(`${num1} ${operator} ${num2} = ${result}`)
+// if(operator == "+"){ 
+//    result = num1 + num2
+// }else if(operator == "-"){ 
+//     result = num1 - num2
+// }else if(operator == "*"){ 
+//     result = num1 * num2
+// }else{ 
+//     result = num1/num2
+// }
+// console.log(`${num1} ${operator} ${num2} = ${result}`)
+// ----------------------------------------
+// How to compare two Arrays are Equal or Not in JavaScript| Coding Interview Question #18
+// let arr1 = [2,3,4,5,6,7,8]
+// let arr2 = [2,3,4,5,6,7,8]
+
+// let result = JSON.stringify(arr1) === JSON.stringify(arr2)
+
+// console.log(result)
+// ----------------------------------------
+// how to find intersection of two arrays in javascript| Coding Interview Questions - #19
+
+let arr1 = [2,3,4,5,6,6.3,1]
+let arr2 = [2,3,5,9,11,12,6]
+
+let intersection = arr1.filter((ele)=> { 
+    return arr2.includes(ele)
+})
+console.log([new Set(intersection)])
