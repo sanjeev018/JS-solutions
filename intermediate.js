@@ -547,10 +547,32 @@
 // ----------------------------------------
 // how to find intersection of two arrays in javascript| Coding Interview Questions - #19
 
-let arr1 = [2,3,4,5,6,6.3,1]
-let arr2 = [2,3,5,9,11,12,6]
+// let arr1 = [2,3,4,5,6,6.3,1]
+// let arr2 = [2,3,5,9,11,12,6]
 
-let intersection = arr1.filter((ele)=> { 
-    return arr2.includes(ele)
-})
-console.log([new Set(intersection)])
+// let intersection = arr1.filter((ele)=> { 
+//     return arr2.includes(ele)
+// })
+// console.log([new Set(intersection)])
+// ----------------------------------------
+// how to find union of two arrays in javascript|Coding Interview Questions - #20
+// let arr1 = [1,2,3,4,5,6]
+// let arr2 = [7,6,8,5,9,10,11]
+// let unionArr = [...arr1, ...arr2]
+
+// console.log(unionArr)
+// console.log([...new Set(unionArr)])     //for remove duplicates values
+
+// ----------------------------------------
+// how to convert celsius to fahrenheit or vice versa|Javascript Coding Interview Question#21
+// let c = 19
+// let fahrenheit = c*1.8+ 32
+// console.log(fahrenheit)
+// ----------------------------------------
+
+
+ 
+
+
+
+
