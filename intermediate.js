@@ -569,10 +569,45 @@
 // let fahrenheit = c*1.8+ 32
 // console.log(fahrenheit)
 // ----------------------------------------
+// | how to convert kilometers into miles in Javascript  Javascript Coding Interview Questions - #22
 
+//  let kilometers = 4
 
- 
+//  let miles = kilometers/1.609344
+// console.log(miles)
+// ----------------------------------------
+// how to convert first letter of string in uppercase|Javascript Coding Interview Questions - #23
+// let str = "gour "
 
+// let result = str.split('')
 
+// for(let i=0; i<result.length; i++){ 
+//     let firstLetter =  result[0]
+//     let newStr =  firstLetter.toUpperCase()
+//     result.shift()
+//     result.unshift(newStr)
+// }
+// console.log(result)
+// _______________________________
+// IMP to do of this problem practice ******
+// let str = "sanjeev gour"
 
+// const firstLetterCapital = (str) => { 
+//     var newStr = str.split(" "); 
+//     var newArr = newStr.map((value)=> { 
+//         return value.charAt(0).toUpperCase() +value.slice(1)
+//     });
+//     return newArr.join(" ")
+// }
+// console.log(firstLetterCapital(str))
+// -------------------------------------------------
+// how to find fibonacci sequence in javascript| Coding Interview Questions - #24
+var a = 0;
+var b = 1;
 
+for(let i=0; i<=15; i++){ 
+    var temp = a+b
+    a=b
+    b=temp
+    console.log(temp)
+}
